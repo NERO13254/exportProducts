@@ -1,0 +1,33 @@
+@media (max-width : 950px){
+    .starsProducts{
+        width: 80%;
+        margin: auto;
+        height: auto; 
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 5% 10px;
+        justify-content: center;
+        padding: 3% 0;
+    }
+}
+
+@media (max-width : 650px){
+    .starsProducts{
+        gap: 10px;
+        grid-template-columns: 100px 100px 100px;
+        height: 26vh;
+    }
+    .category strong{
+        font-size: 12px;
+    }
+    .starTargetProduct {
+        height: auto;
+    }
+    .starTargetProduct strong{
+        font-size: 9px;
+    }
+    .starsProducts .valueContent{
+        font-size: 10px;
+    }
+}

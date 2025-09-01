@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: default;
+}
+body{
+    margin-top: 100px;
+}
+.show{
+    display: block;
+}
+.scroll{
+    overflow: hidden;
+}
+*::-webkit-scrollbar{
+    width: 4px;
+    height: 0;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #333;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background-color: #1E88E5;
+    box-shadow: 0px 0px 5px #333;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    z-index: 4;
+    top: 0;
+}
+
+.topHeader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid #3a7fcc;
+    box-sizing: border-box;
+}
+.dataContent{
+    width: 60%;
+    height: 46px;
+    background: white;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+}
+.dataContent input{
+    background: transparent;
+    width: 95%;
+    margin: auto;
+    height: 100%;
+    border: none;
+    outline: 0;
+    font-size: 100%;
+}
+
+#desplegateCart{
+    background: white;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-image: url("../img/5094032.png");
+    background-position: center;
+    background-position-x: -1px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    position: relative;
+}
+#counterPrdouct{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #00800096;
+    border-radius: 100%;
+    color: white;
+    cursor: pointer;
+
+}
+
+.bottomHeader{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    align-items: center;
+    justify-content: center;
+}
+.enterprise{
+    background: linear-gradient(
+        to bottom, #74acdf 33.33%, /* celeste superior */
+        white 33.33% 66.66%, /* franja blanca */ 
+        #74acdf 66.66% 100% /* celeste inferior */
+    );
+    width: 100px;
+    text-align: center;
+    position: relative;
+}
+.enterprise::before{
+    content: "";
+    position: absolute;
+    top: 63%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background: gold;
+    border-radius: 50%;
+}
+.dispelCategory {
+    position: absolute;
+    display: grid;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 0px 10px #ccc;
+    height: 0px;
+    opacity: 0;
+    transition: all 0ms;
+    overflow: hidden;
+}
+.option{
+    padding: 10px 0px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 20px;
+    cursor: pointer;
+}
+.option:hover{
+    background-color: #74acdf;
+    color: white;
+}
+.category {
+    height: 100%;
+}
+.category strong {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 3;
+    background: #1e88e5;
+}
+
+.category:hover .dispelCategory {
+    height: auto;
+    opacity: 1;
+}
+.cartContent{
+    position: relative;
+}
+
+.cartContentProductsController{
+    position: absolute;
+    width: 98%;
+    height: 78vh;
+    top: 100px;
+    background: white;
+    padding: 3% 1%;
+    overflow: scroll;
+    display: none;
+    grid-template-rows: 1fr;
+}
+.cartContentProductsController button{
+    border: none;
+    outline: none;
+    background: #69b469;
+    color: white;
+    font-size: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+.productInCartContent{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    border-bottom: 1px solid #ccc;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-weight: lighter;
+}
+.infoProduct{
+    display: grid;
+    grid-template-rows: 1fr;
+    font-size: 30px;
+}
+.productInCartContent img{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+.productInCartContent label{
+    font-size: 20px;
+}
+.productInCartContent input{
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    width: 80px;
+    cursor: pointer;
+}
+.productInCartContent button{
+    height: 60px;
+    width: 60px;
+    border: none;
+    background: #cf292980;
+    color: white;
+    font-size: 27px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#cartProducts{
+    overflow: scroll;
+}

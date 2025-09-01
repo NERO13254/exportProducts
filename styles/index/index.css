@@ -1,0 +1,93 @@
+.containerAll{
+    background: #f3faff;
+}
+.imgMessi, .imgCarpincho{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    height: 800px;
+    left: -300px;
+    mask-image: linear-gradient(black -172%, transparent);
+}
+.imgCarpincho{
+    left: auto;
+    right: -5%;
+    top: -100px;
+}
+.imgCarpincho img{
+    width: 700px;
+}
+.imgMessi::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    inset: 0;
+    background-image: linear-gradient(90deg, #00800078 50%, #ffffff 85%);
+}
+.imgCarpincho::before{
+    content: "";
+    position: absolute;
+    z-index: 3;
+    inset: 0;
+    background-image: linear-gradient(273deg, #00800078 50%, #ffffff 89%);
+}
+.starsProducts{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 5% 2%;
+    justify-content: center;
+    padding-top: 3%;
+    position: relative;
+    z-index: 2;
+    height: 81.3vh;
+    overflow: scroll;
+}
+.starTargetProduct , .cartData{
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 20px #ccc;
+    box-sizing: border-box;
+    background: white;
+    display: grid;
+    grid-template-rows: 1fr 17% 10%;
+    height: 400px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.starTargetProduct input{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    
+}
+.starTargetProduct:hover , .cartData:hover{
+    border:1px solid #1e88e5;
+}
+.starTargetProduct img , .cartData img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.starImg{
+    border-bottom: 1px solid #ccc;
+    height: 100%;
+    overflow: hidden;
+    background: white;
+}
+.starTargetProduct strong , .cartData strong{
+    text-align: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 100;
+}
+.starTargetProduct .valueContent{
+    font-size: 28px;
+}
+
