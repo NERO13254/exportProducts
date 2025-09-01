@@ -21,8 +21,9 @@
     <div class="bottomHeader">
         <!-- category content -->
         <div class="category">
-            <strong>Sabores</strong>
-
+            <input type="checkbox" name="sabores" id="sabores" hidden>
+            <label for="sabores" class='titleCategory' >Sabores</label>
+            
             <div class="dispelCategory">
                 <label for="" class="option">Dulce</label>
                 <label for="" class="option" >Salado</label>
@@ -31,7 +32,8 @@
         </div>
 
         <div class="category">
-            <strong>Paquetes Populares</strong>
+            <input type="checkbox" name="paquetes" id="paquetes" hidden>
+            <label for="paquetes" class='titleCategory'>Paquetes Populares</label>
 
             <div class="dispelCategory">
                 <label class="option">Pack Argentina</label>

@@ -15,8 +15,8 @@ export function seeProductsOfCart(){
             <strong class='nameProdctInCart'>${name}</strong>
             <label for='product'>Unidades</label>
             <div class='controllerProdcut'>
-                <input type='number' name='product' value ='${ammount}'>
-                <button class='deletProduct'>X</button>
+                <input type='number' name='product' inputmode="numeric" value ='${ammount}'>
+                <button class='deletProduct'>x</button>
             </div>
         </div>
 

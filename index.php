@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/index/index.css?v=<?php echo time()?>">
     <link rel="stylesheet" href="./styles/index/index_media.css?v=<?php echo time()?>">
     <link rel="stylesheet" href="./styles/settingCart/settingCart.css?v=<?php echo time()?>">
+    <link rel="stylesheet" href="./styles/settingCart/settingCart_media.css?v=<?php echo time()?>">
     <link rel="stylesheet" href="./styles/reportStatus.css?v=<?php echo time()?>">
 </head>
 <body>

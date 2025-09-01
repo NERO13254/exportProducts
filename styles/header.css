@@ -145,8 +145,13 @@ body{
     z-index: 3;
     background: #1e88e5;
 }
-
-.category:hover .dispelCategory {
+.titleCategory{
+    color: white;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+#sabores:checked ~ .dispelCategory , #paquetes:checked ~ .dispelCategory {
     height: auto;
     opacity: 1;
 }
@@ -218,4 +223,18 @@ body{
 }
 #cartProducts{
     overflow: scroll;
+}
+
+@media (max-width : 600px){
+    .cartContentProductsController{
+        height: 70vh;
+    }
+    .productInCartContent button{
+        font-size: 15px;
+        height: 40px;
+        width: 40px;
+    }
+    .bottomHeader{
+        grid-template-columns: 40% 1fr;
+    }
 }

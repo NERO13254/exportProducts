@@ -1,0 +1,18 @@
+@media (max-width:600px){
+   :root{
+        --width : 150px;
+        --height : 250px
+   }
+
+    #productsContainer{
+        grid-template-columns: var(--width) var(--width);
+        width: 95%;
+    }
+    .cartData{
+        height: var(--height);
+        width: var(--width);
+    }
+    .starTargetProduct strong, .cartData strong{
+        font-size: 100%;
+    }
+}
