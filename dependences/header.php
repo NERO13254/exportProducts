@@ -8,7 +8,7 @@
 
         <!-- searcher controller -->
         <div class="dataContent">
-            <input type="text" placeholder="Buscar . . .">
+            <input type="text" id='searchProduct' placeholder="Buscar . . .">
         </div>
 
         <!-- cart content -->
@@ -52,6 +52,11 @@
     </div>
  
 
-    <!-- contenedor de alertass -->
+    <!-- alert container -->
     <div id="reportStatus"></div>
+
+    <!-- results of searcher products -->
+    <div id="searchResults" class='searchResultsContent'></div>
+
+    <script type="module" src="scripts/header/searcher.js"></script>
 </div>

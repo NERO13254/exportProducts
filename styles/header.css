@@ -224,8 +224,34 @@ body{
 #cartProducts{
     overflow: scroll;
 }
-
+.searchResultsContent{
+    display: grid;
+    background: white;
+    width: 78%;
+    margin: auto;
+    border-radius: 0px 0px 60px 60px;
+    height: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    gap: 10px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.showSearcher{
+    padding: 1%;
+    height: 70vh;
+    overflow: scroll;
+}
+@media (max-width: 1200px){
+    .showSearcher{
+        height: 81vh;
+        width: 97%;
+    }
+}
 @media (max-width : 600px){
+    .searchResultsContent{
+        grid-template-columns: 1fr 1fr;
+    }
     .cartContentProductsController{
         height: 70vh;
     }

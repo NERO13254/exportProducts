@@ -47,7 +47,7 @@ window.onload = async()=>{
     products.addEventListener("click" , (e)=>{
         desplegateSettings(e.target);
     });
-
+    
     // al presionar "x" cierra la seccion de producto
     document.getElementById("closeSection").addEventListener("click" , ()=>{
         document.getElementById("addedController").classList.toggle("show")
@@ -57,6 +57,12 @@ window.onload = async()=>{
     document.getElementById("addedController").addEventListener("click" , (e)=>{
         addToCart(e.target);
     });
+
+    // al presionar agregar al carrito desd el buscador
+    document.getElementById("searchResults").addEventListener("click", (e)=>{
+        addToCart(e.target);
+    });
+
 
     // al presionar el carrito 
     document.getElementById("counterPrdouct").addEventListener("click" , ()=>{

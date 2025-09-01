@@ -1,6 +1,8 @@
 export async function addToCart(target) {
     if(target.tagName!="BUTTON" || target.className!="addProductToCart"){ return }
     
+
+    document.getElementById("searchResults").classList.remove("showSearcher");
     const targetProduct = target.previousElementSibling.textContent;
     
     // obtiene el carrito de compras
